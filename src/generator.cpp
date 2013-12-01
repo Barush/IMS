@@ -14,18 +14,23 @@ class Generator : public Event{
 		cout << Time <<": Generated" << endl;
 		generator_h(Time - lastTime);
 		lastTime = Time;
-		//double next = Beta(2, 150, 0, 290);
-		double next = Poisson(1);
-		next += Random();
-		if(next < 0)
-			next = -next;
-		Activate(Time + next*5);
+		double next;
+
+		if(Random() < 0.046){		//4.6% aut projelo zaraz (interval 0-1)
+			next = Uniform(0, 1);
+			Activate(Time + next);
+		}
+		else{
+			next = Gama(1, 4);
+			Activate(Time + next + 1);
+		}
 	}
 };
 
 int main(){
 
 	SetOutput("generator.out");
+	RandomSeed(time(NULL));
 
 	Init(0, 120*60);
 	(new Generator)->Activate();
