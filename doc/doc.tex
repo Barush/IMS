@@ -5,6 +5,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[czech]{babel}
 \usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \pagestyle{fancy}
 \lhead{}
 \chead{}
@@ -13,7 +15,11 @@
 \cfoot{}
 \rfoot{\thepage\ / \pageref{LastPage}}
 
+
 \begin{document}
+
+\input{./title.tex}
+\clearpage
 
 \tableofcontents
 \clearpage
@@ -33,6 +39,7 @@ Hypotézy, předpoklady a všechna konkrétní čísla vyskytující se v modelu
 Předpokládáme výhradně Královopolský tunel za bílého dne, protože bagr neplave.
 Okolnosti měření, popis způsobu měření a způsobu naměřených dat.
 \section{Způsob řešení}
+https://www.causeweb.org/repository/statjava/Distributions.html - applety pro vyzkouseni jednotlivych rozlozeni
 \section{Testování}
 	\subsection{Postup experimentování a okolnosti}
 	Jak jsme zjišťovali aproximace histogramů..
