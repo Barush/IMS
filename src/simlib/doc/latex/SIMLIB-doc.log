@@ -1,0 +1,88 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdftex 2013.9.25)  30 NOV 2013 23:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**SIMLIB-doc.tex simlib.pdf
+(./SIMLIB-doc.tex
+! Undefined control sequence.
+l.12 \usepackage
+                {textcomp}
+? 
+! Undefined control sequence.
+l.13 \usepackage
+                [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                [czech]{babel}
+? 
+! Undefined control sequence.
+l.15 \usepackage
+                {epsfig}                % obrázky
+? 
+! Undefined control sequence.
+l.17 \begin
+           {document}
+? 
+! Undefined control sequence.
+l.19 \begin
+           {titlepage}
+? 
+! Undefined control sequence.
+l.22 \begin
+           {center}
+? 
+! Undefined control sequence.
+l.24             {\Huge
+                       \bf Popis simulaèní knihovny SIMLIB\\}
+? 
+Missing character: There is no è in font cmbx10!
+Missing character: There is no í in font cmbx10!
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.24 ...Huge\bf Popis simulaèní knihovny SIMLIB\\}
+                                                  
+? 
+Runaway argument?
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.24 ...Huge\bf Popis simulaèní knihovny SIMLIB\\}
+                                                  
+? 
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.26 \bigskip               {Petr Peringer\\}
+                                             
+? 
+Runaway argument?
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.26 \bigskip               {Petr Peringer\\}
+                                             
+? 
+! Undefined control sequence.
+l.28 \bigskip                    \today
+                                       
+? 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on SIMLIB-doc.pdf (1 page, 28288 bytes).
+PDF statistics:
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

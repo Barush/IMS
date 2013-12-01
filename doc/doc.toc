@@ -1,0 +1,13 @@
+\select@language {czech}
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{2}
+\contentsline {subsection}{\numberline {1.1}Co jsme \IeC {\v r}e\IeC {\v s}ili a pro\IeC {\v c} jsme to \IeC {\v r}e\IeC {\v s}ili}{2}
+\contentsline {subsection}{\numberline {1.2}Kde jsme vzali data}{2}
+\contentsline {subsection}{\numberline {1.3}Jak jsme zjistili, jestli je model validn\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {2}Fakta}{2}
+\contentsline {section}{\numberline {3}Koncepce}{2}
+\contentsline {section}{\numberline {4}Zp\IeC {\r u}sob \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{2}
+\contentsline {section}{\numberline {5}Testov\IeC {\'a}n\IeC {\'\i }}{2}
+\contentsline {subsection}{\numberline {5.1}Postup experimentov\IeC {\'a}n\IeC {\'\i } a okolnosti}{2}
+\contentsline {subsection}{\numberline {5.2}Dokumentace jednoltiv\IeC {\'y}ch experiment\IeC {\r u}}{2}
+\contentsline {subsection}{\numberline {5.3}Z\IeC {\'a}v\IeC {\v e}r experiment\IeC {\r u}}{2}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{2}
