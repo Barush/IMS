@@ -11,12 +11,18 @@ PFLAGS=-lsimlib -lm
  
 CC = g++
 
-all: generator
+all: tunel sklad posta
 
-generator: generator.cpp
-	$(CC) $(CFLAGS) -o $@ generator.cpp $(PFLAGS)
+tunel: tunel.cpp
+	$(CC) $(CFLAGS) -o $@ tunel.cpp $(PFLAGS)
+
+sklad: sklad.cpp
+	$(CC) $(CFLAGS) -o $@ sklad.cpp $(PFLAGS)
+
+posta: posta.cpp
+	$(CC) $(CFLAGS) -o $@ posta.cpp $(PFLAGS)
 
 rebuild: clean all
 
 clean:
-	rm -f generator *.out
+	rm -f tunel  sklad *.out
