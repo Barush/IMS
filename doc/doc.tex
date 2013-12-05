@@ -2,6 +2,7 @@
 \documentclass[11pt,a4paper]{article}
 \input{il2code.tex}
 \usepackage{textcomp}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[czech]{babel}
 \usepackage{fancyhdr}
@@ -13,7 +14,7 @@
 \rhead{Barbora Skřivánková (xskriv01) a Jan Kročil(xkroci02)}
 \lfoot{Dokumentace projektu do předmětu IMS}
 \cfoot{}
-\rfoot{\thepage\ / \pageref{LastPage}}
+\rfoot{Strana \thepage}
 
 
 \begin{document}
@@ -25,21 +26,105 @@
 \clearpage
 
 \section{Úvod}
-	\subsection{Co jsme řešili a proč jsme to řešili}
-	V této práci je řešena implementace tří různých generátorů pro poukázání na možnost
-	generovat reálné jevy pomocí počítače.
-	\subsection{Kde jsme vzali data}
-	Měřili jsme v terénu velmi sofistikovanými metodami.
-	\subsection{Jak jsme zjistili, jestli je model validní}
-	Porovnáváním histogramů reálného jevu a výstupu našeho generátoru.
+	\subsection{Souhrn problematiky řešené v naší práci}
+	V této práci se zabýváme možností aproximvat každodenní jevy, které se zdají býti náhodnými,
+	pomocí matematických funkcí. Aproximace běžných jevů matematickými funkcemi může být velmi 
+	užitečná při zobrazování samotných jevů, nebo i celých systémů pomocí simulačních modelů v
+	počítači. Simulační modely nám mohou přinést nové poznatky o modelovaném systému, které 
+	mnohdy z reálného systému pro velkou finanční nebo časovou náročnost získat nelze. \\ \\
+
+	Naše práce se zabývá konkrétně generátory pseudonáhodných čísel, které v simulačních 
+	modelech hrají velmi důležitou roli - v modelovém prostředí veškeré události probíhají v 
+	nulovém (nebo jiném konstantním) čase a právě generátory pseudonáhodných čísel zajišťují,
+	že se simulační model svými zpožděními, četnostmi výskytů zkoumaných jevů nebo intervaly mezi
+	příchody jednotlivých požadavků na služby přiblíží reálnému systému. \\ \\
+
+	Jevy, které jsme v naší práci řešili, jsou následující:
+	\begin{enumerate}
+		\item{\textbf{Intervaly mezi vjezdy jednotlivých automobilů do Královopolského tunelu}}
+		\item{\textbf{Četnosti příchodů zákazníků na poštu Brno 12 v průběhu pracovního dne}}
+		\item{\textbf{Četnosti příjezdů nákladních automobilů do skladu během pracovního dne}}
+	\end{enumerate}
+
+	\subsection{Způsoby získávání použitých dat}
+	Data pro všechny tři jevy jsme získali měřením v terénu. \\ \\
+
+	Měření intervalů mezi vjezdy automobilů
+	do Královopolského tunelu jsme provedli sami u vjezdu do zmíněného tunelu. Měření jsme prováděli
+	poloautomatickou metodou s využitím základních funkcí knihovny time.h jazyka C. \\ \\
+
+	Data o příchodech klientů na poštu Brno 12 nám oficiální cestou poskytl oblastní manažer 
+	České Pošty, pan Tomáš Křepela, jemuž bychom chtěli na tomto místě poděkovat za ochotu a 
+	vstřícné jednání. \\ \\
+
+	Měření hodinových četností příjezdu nákladních aut do skladu ve firmě, která nechtěla být 
+	jmenována, bylo provedeno na vrátnici dané firmy, přes kterou musela projet všechna auta, která 
+	se do areálu skladu v den měření dostala. Nám byla poskytnuta vrátným dané firmy, kterému také 
+	děkujeme.
+
+	\subsection{Metody ověření validity získaného modelu}
+	Výstupem našich simulačních modelů jsou histogramy, znázorňující zkoumané vlastnosti
+	jednotlivých jevů. Pro ověření validity našich simulačních modelů jsme porovnávali 
+	histogramy naměřených hodnot s histogramy hodnot generovaných našimi generátory.
+
+
 \section{Fakta}
-Hypotézy, předpoklady a všechna konkrétní čísla vyskytující se v modelu.
+V Královopolském tunelu pokládáme úterní provoz za univerzální pro všechny pracovní dny mimo pátku, kdy 
+se hustota provozu v Královopolském tunelu zvyšuje, jak uvedla Mgr. Nina Ledvinová, tisková mluvčí ŘSD 
+(Ředitelství silnic a dálnic) pro \cite{doipo}.
+
 \section{Koncepce}
---> Abstraktní model s vyznačením relevantních faktů.
-Předpokládáme výhradně Královopolský tunel za bílého dne, protože bagr neplave.
-Okolnosti měření, popis způsobu měření a způsobu naměřených dat.
+V této kapitole podrobně popíšeme okolnosti měření jednotlivých jevů a všechna fakta, která by mohla
+přesnost měření ovlivnit. Zároveň přesně definujeme, pro jaké okolní podmínky je náš model 
+platný, protože změny vnějších podmínek mohou velmi výrazně ovlivnit průběhy jednotlivých jevů.
+Pokud vezmeme v úvahu například první z našich měřených jevů - Intervaly mezi vjezdy aut do Královopolského
+tunelu - jeho platnost je omezená ryze na danou dobu dne, kterou je poledne. V odpolední špičce
+by průběh daného jevu mohl vypadat velmi odlišně.
+
+	\subsection{Intervaly mezi vjezdy jednotlivých automobilů do Královopolského tunelu}
+		\subsubsection{Měřený jev}
+		První měřený jev má následující vlastnosti: jedná se o měření intervalů mezi vjezdy
+		jednotlivých aut do Královopolského tunelu z Žabovřeské ulice Hradecká směrem do Králova pole
+		na ulici Svitavská. Za vjezd do tunelu je považován okamžik, ve kterém se zadní část
+		auta dostane do vnitřního prostoru tunelu. \\ \\
+
+		Měření bylo prováděno v poledních hodinách (11.16 - 13.16) v úterý 19.11.2013, provoz který byl
+		zaznamenán lze tedy považovat za standardní polední provoz ve všední den. Ze všedních dní je však 
+		pro přesnost nutné vyloučit pátek, během kterého se situace výrazně mění, jak bylo zmíněno výše.
+
+		\subsubsection{Způsob měření}
+		Měření bylo prováděno z mostu, který je bezprostředně u portálu Královopolského tunelu, takže je z 
+		něj dostačující výhled pro určení přesného okamžiku vjezdu do tunelu. Pro eliminaci lidské chyby 
+		jsme vytvořili jednoduchý počítačový program reagující na stisk klávesy a zaznamenávající dobu od
+		minulého stisku klávesy. Jako jednotku jsme použili sekundu s matematickým zaokrouhlením, což je 
+		vzhledem k rozptylu hodnot 0-34 s dostačující (maximální chyba je 0.5 s, tedy 1.47\% rozsahu hodnot).
+
+		\subsubsection{Zpracování naměřených dat}
+		Při měření se data automaticky ukládala do souboru ve formátu csv, který jsme dále zpracovávali
+		pomocí jazyka R v prostředí R Studio, kde jsme vypočítali četnost výskytů jednotlivých hodnot v
+		celém souboru 1517 hodnot a vektor těchto četností jsme následně zobrazili ve formě histogramu, jak 
+		lze vidět na obrázku \ref{tunel}.
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/tunelBarPlot.pdf}
+		\caption{Histogram měření}
+		\label{tunel}
+		\end{figure}
+
+	\subsection{Četnosti příchodů zákazníků na poštu Brno 12 v průběhu pracovního dne}
+		\subsubsection{Měřený jev}
+		\subsubsection{Způsob měření}
+		\subsubsection{Zobrazení naměřených dat}
+
+	\subsection{Četnosti příjezdů nákladních automobilů do skladu během pracovního dne}
+		\subsubsection{Měřený jev}
+		\subsubsection{Způsob měření}
+		\subsubsection{Zobrazení naměřených dat}
+
 \section{Způsob řešení}
 https://www.causeweb.org/repository/statjava/Distributions.html - applety pro vyzkouseni jednotlivych rozlozeni
+Popis prevodu nekterych veci do kodu - grafy s aproximaci jednotlivych rozlozeni
+
 \section{Testování}
 	\subsection{Postup experimentování a okolnosti}
 	Jak jsme zjišťovali aproximace histogramů..
@@ -47,8 +132,10 @@ https://www.causeweb.org/repository/statjava/Distributions.html - applety pro vy
 	\subsection{Závěr experimentů}
 	Generator vjezdu do tunelu v case simulace 2 hodiny vygeneroval pocet aut odpovidajici realnemu poctu aut, projizdejicich behem mereni. (U pripadu, ktery je modelovan v prilozenem grafu jde o konkretne 1537 modelovych aut behem dvou hodin simulace oproti 1517 realnych aut behem dvou hodin mereni.)
 	Co ve výsledcích má čtenář vidět...
+
 \section{Závěr}
 Jednoznačná odpověď na prvotní otázku studie.
 
+\bibliography{bibliography}
 
 \end{document}

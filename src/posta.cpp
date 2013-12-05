@@ -7,22 +7,37 @@ using namespace std;
 
 Histogram generator_h("POSTA", 0, 30, 21);
 
-double lastTime = 0;	//zacatek simulace
-
 class Generator : public Event{
-	//pri kazdem zavolani generuje hodinu dne, ve ktere prijede dalsi auto
+	//pri kazdem zavolani generuje minutu pracovniho dne, ve ktere prijde dalsi zakaznik
 	void Behavior(){
-		cout << Time <<": Generated" << endl;
-
-		if(Time > 0){
-			//inicializace generatoru neni vystupem
-			generator_h(Time - lastTime);	//cas od posledniho generovani == v kolik hodin (od 0) auto prijelo
-		}
-
-		lastTime = Time;				//aktualni cas je nula pro dalsi generovani
 		double next;
-		next = Erlang(16, 50);
-		Activate(Time + next);
+		double rnd = Random();
+
+		if(rnd < 0.2358){
+			do{
+				next = Gama(1.8, 30);
+			}while(next > 150);
+			generator_h(150 - next);			
+		}
+		else if(rnd < 0.4607){
+			do{
+				next = Beta(3, 1, -200, 285);
+			}while((next < 150) || (next > 285));
+			generator_h(next);	
+		}
+		else if(rnd < 0.766){
+			do{
+				next = Beta(1, 3, 285, 800);
+			}while((next > 480) || (next < 285));
+			generator_h(next);	
+		}
+		else {
+			do{
+				next = Gama(2.5, 40);
+			}while((next > 180) || (next < 30));		//630 - 450 (maximalni hodnota - posunuti fce)
+			generator_h(next + 450);	
+		}
+		Activate(Time + 1);
 	}
 };
 
@@ -31,7 +46,7 @@ int main(){
 	SetOutput("posta.out");
 	RandomSeed(time(NULL));
 
-	Init(0, 1000);
+	Init(0, 1106);
 	(new Generator)->Activate();
 	Run();
 

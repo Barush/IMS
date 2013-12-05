@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.25)  1 DEC 2013 16:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.25)  5 DEC 2013 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,10 +105,42 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -405,8 +437,8 @@ Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count87
-\U@D=\dimen103
+\babel@savecnt=\count88
+\U@D=\dimen105
 )
 
 Package babel Warning: No hyphenation patterns were loaded for
@@ -416,7 +448,7 @@ Package babel Warning: No hyphenation patterns were loaded for
 \l@czech = a dialect from \language0
 Package babel Info: Making " an active character on input line 172.
 LaTeX Info: Redefining \uv on input line 210.
-\cs@wordlen=\count88
+\cs@wordlen=\count89
 Package babel Info: Making - an active character on input line 226.
 )) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
@@ -429,58 +461,37 @@ Package babel Info: Making - an active character on input line 226.
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+! LaTeX Error: Option clash for package graphicx.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count89
-))
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
-) (./doc.aux)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \newcommand
+                {\HRule}{\rule{\linewidth}{0.5mm}}
+? 
+(./doc.aux)
 \openout1 = `doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -552,7 +563,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 20.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./doc.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./doc.toc
+Overfull \hbox (22.3382pt too wide) in paragraph at lines 8--8
+ [][] []\OT1/cmr/m/n/10.95 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^
+^Wu do Kr^^Salovopolsk^^Seho 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `doc.toc'.
 
@@ -563,54 +580,171 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 25.
-
 [1
 
 ]
-Overfull \hbox (15.43352pt too wide) in paragraph at lines 38--41
-\OT1/cmr/m/n/10.95 --> Ab-straktn^^S^^P model s vyzna^^Tcen^^S^^Pm rel-e-vantn^
-^S^^Pch fakt^^Wu. P^^Tredpokl^^Sad^^Same v^^Syhradn^^Te
+Overfull \hbox (3.72298pt too wide) in paragraph at lines 30--35
+\OT1/cmr/m/n/10.95 samotn^^Sych jev^^Wu, nebo i cel^^Sych syst^^Sem^^Wu po-moc^
+^S^^P sim-ula^^Tcn^^S^^Pch model^^Wu v po^^Tc^^S^^Pta^^Tci.
  []
 
 
-Overfull \hbox (1.68504pt too wide) in paragraph at lines 42--43
-\OT1/cmr/m/n/10.95 https://www.causeweb.org/repository/statjava/Distributions.h
-tml - ap-plety
+Overfull \hbox (6.73427pt too wide) in paragraph at lines 30--35
+\OT1/cmr/m/n/10.95 Sim-ula^^Tcn^^S^^P mod-ely n^^Sam mo-hou p^^Trin^^Sest nov^^
+Se poz-natky o mod-e-lo-van^^Sem syst^^Semu,
  []
 
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 54.
+Overfull \hbox (0.4988pt too wide) in paragraph at lines 30--35
+\OT1/cmr/m/n/10.95 kter^^Se mno-hdy z re^^Saln^^Seho syst^^Semu pro velkou fi-n
+an^^Tcn^^S^^P nebo ^^Tcasovou n^^Saro^^Tcnost
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+
+ []
+
+
+Overfull \hbox (7.61641pt too wide) in paragraph at lines 36--41
+\OT1/cmr/m/n/10.95 zpo^^Tzd^^Ten^^S^^Pmi, ^^Tcetnostmi v^^Syskyt^^Wu zk-ouman^^
+Sych jev^^Wu nebo in-ter-valy mezi p^^Tr^^S^^Pchody
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+
+Overfull \hbox (28.26031pt too wide) in paragraph at lines 44--45
+[]\OT1/cmr/bx/n/10.95 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu d
+o Kr^^Salovopolsk^^Seho
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
 
 [2
 
 ]
+Overfull \hbox (5.36542pt too wide) in paragraph at lines 66--69
+\OT1/cmr/m/n/10.95 V^^Systupem na^^Tsich sim-ula^^Tcn^^S^^Pch model^^Wu jsou hi
+s-togramy, zn^^Sazor^^Tnuj^^S^^Pc^^S^^P zk-ouman^^Se
+ []
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 54.
 
-[3] (./doc.aux)
+LaTeX Warning: Citation `doipo' on page 3 undefined on input line 74.
+
+
+Overfull \hbox (4.36052pt too wide) in paragraph at lines 72--75
+\OT1/cmr/m/n/10.95 V Kr^^Salovopolsk^^Sem tunelu pokl^^Sad^^Same ^^Sutern^^S^^P
+ provoz za uni-verz^^Saln^^S^^P pro v^^Tsechny
+ []
+
+
+Overfull \hbox (57.31111pt too wide) in paragraph at lines 84--84
+[]\OT1/cmr/bx/n/12 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu do K
+r^^Salovopolsk^^Seho
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
+
+ []
+
+[3]
+Overfull \hbox (23.95013pt too wide) in paragraph at lines 96--101
+\OT1/cmr/m/n/10.95 M^^Te^^Tren^^S^^P bylo prov^^Sad^^Teno z mostu, kter^^Sy je 
+bezprost^^Tredn^^Te u port^^Salu Kr^^Salovopolsk^^Seho
+ []
+
+<../measuring/tunelBarPlot.pdf, id=20, 505.89pt x 505.89pt>
+File: ../measuring/tunelBarPlot.pdf Graphic file (type pdf)
+
+<use ../measuring/tunelBarPlot.pdf>
+Package pdftex.def Info: ../measuring/tunelBarPlot.pdf used on input line 109.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+ [4 <../measuring/tunelBarPlot.pdf>]
+Overfull \hbox (7.05278pt too wide) in paragraph at lines 119--119
+[][]\OT1/cmr/bx/n/12 Cetnosti p^^Tr^^S^^Pjezd^^Wu n^^Sakladn^^S^^Pch au-to-mo-b
+il^^Wu do skladu b^^Tehem
+ []
+
+
+Overfull \hbox (1.68504pt too wide) in paragraph at lines 125--127
+\OT1/cmr/m/n/10.95 https://www.causeweb.org/repository/statjava/Distributions.h
+tml - ap-plety
+ []
+
+No file doc.bbl.
+[5] (./doc.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2785 strings out of 495059
- 36954 string characters out of 3182030
- 92594 words of memory out of 3000000
- 5931 multiletter control sequences out of 15000+200000
+ 2798 strings out of 495059
+ 37166 string characters out of 3182030
+ 94150 words of memory out of 3000000
+ 5941 multiletter control sequences out of 15000+200000
  9105 words of font info for 32 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,11n,43p,309b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,43p,309b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on doc.pdf (4 pages, 78460 bytes).
+Output written on doc.pdf (6 pages, 93871 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
