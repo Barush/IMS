@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.25)  5 DEC 2013 19:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.25)  6 DEC 2013 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,8 +9,8 @@ Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -556,7 +556,7 @@ e
 ))
 (./title.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 20.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -564,9 +564,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./doc.toc
-Overfull \hbox (22.3382pt too wide) in paragraph at lines 8--8
- [][] []\OT1/cmr/m/n/10.95 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^
-^Wu do Kr^^Salovopolsk^^Seho 
+Overfull \hbox (20.19302pt too wide) in paragraph at lines 7--7
+ [][] []\OT1/cmr/m/n/12 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu
+ do Kr^^Salovopolsk^^Seho 
+ []
+
+
+Overfull \hbox (0.6835pt too wide) in paragraph at lines 15--15
+ [][] [][]\OT1/cmr/m/n/12 Cetnosti p^^Tr^^S^^Pjezd^^Wu n^^Sakladn^^S^^Pch au-to
+-mo-bil^^Wu do skladu b^^Tehem pra- 
+ []
+
+
+Overfull \hbox (57.79259pt too wide) in paragraph at lines 24--24
+ [][] []\OT1/cmr/m/n/12 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu
+ do Kr^^Salovopolsk^^Seho 
+ []
+
+
+Overfull \hbox (7.76395pt too wide) in paragraph at lines 25--25
+ [][] [][]\OT1/cmr/m/n/12 Cetnosti p^^Tr^^S^^Pchod^^Wu z^^Sakazn^^S^^Pk^^Wu na 
+po^^Tstu Brno 12 v pr^^Wub^^Tehu 
+ []
+
+
+Overfull \hbox (14.78331pt too wide) in paragraph at lines 26--26
+ [][] [][]\OT1/cmr/m/n/12 Cetnosti p^^Tr^^S^^Pjezd^^Wu n^^Sakladn^^S^^Pch au-to
+-mo-bil^^Wu do skladu b^^Tehem 
  []
 
 )
@@ -576,31 +600,13 @@ Overfull \hbox (22.3382pt too wide) in paragraph at lines 8--8
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [1
 
 ]
-Overfull \hbox (3.72298pt too wide) in paragraph at lines 30--35
-\OT1/cmr/m/n/10.95 samotn^^Sych jev^^Wu, nebo i cel^^Sych syst^^Sem^^Wu po-moc^
-^S^^P sim-ula^^Tcn^^S^^Pch model^^Wu v po^^Tc^^S^^Pta^^Tci.
- []
-
-
-Overfull \hbox (6.73427pt too wide) in paragraph at lines 30--35
-\OT1/cmr/m/n/10.95 Sim-ula^^Tcn^^S^^P mod-ely n^^Sam mo-hou p^^Trin^^Sest nov^^
-Se poz-natky o mod-e-lo-van^^Sem syst^^Semu,
- []
-
-
-Overfull \hbox (0.4988pt too wide) in paragraph at lines 30--35
-\OT1/cmr/m/n/10.95 kter^^Se mno-hdy z re^^Saln^^Seho syst^^Semu pro velkou fi-n
-an^^Tcn^^S^^P nebo ^^Tcasovou n^^Saro^^Tcnost
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 30--35
 
  []
@@ -611,9 +617,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--35
  []
 
 
-Overfull \hbox (7.61641pt too wide) in paragraph at lines 36--41
-\OT1/cmr/m/n/10.95 zpo^^Tzd^^Ten^^S^^Pmi, ^^Tcetnostmi v^^Syskyt^^Wu zk-ouman^^
-Sych jev^^Wu nebo in-ter-valy mezi p^^Tr^^S^^Pchody
+Overfull \hbox (4.40424pt too wide) in paragraph at lines 36--41
+\OT1/cmr/m/n/12 zpo^^Tzd^^Ten^^S^^Pmi, ^^Tcetnostmi v^^Syskyt^^Wu zk-ouman^^Syc
+h jev^^Wu nebo in-ter-valy mezi p^^Tr^^S^^Pchody
  []
 
 
@@ -627,9 +633,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
  []
 
 
-Overfull \hbox (28.26031pt too wide) in paragraph at lines 44--45
-[]\OT1/cmr/bx/n/10.95 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu d
-o Kr^^Salovopolsk^^Seho
+Overfull \hbox (25.9358pt too wide) in paragraph at lines 44--45
+[]\OT1/cmr/bx/n/12 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu do K
+r^^Salovopolsk^^Seho
  []
 
 
@@ -653,98 +659,163 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--55
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
 [2
 
 ]
-Overfull \hbox (5.36542pt too wide) in paragraph at lines 66--69
-\OT1/cmr/m/n/10.95 V^^Systupem na^^Tsich sim-ula^^Tcn^^S^^Pch model^^Wu jsou hi
-s-togramy, zn^^Sazor^^Tnuj^^S^^Pc^^S^^P zk-ouman^^Se
+Overfull \hbox (1.98482pt too wide) in paragraph at lines 64--67
+\OT1/cmr/m/n/12 V^^Systupem na^^Tsich sim-ula^^Tcn^^S^^Pch model^^Wu jsou his-t
+ogramy, zn^^Sazor^^Tnuj^^S^^Pc^^S^^P zk-ouman^^Se
  []
 
 
-LaTeX Warning: Citation `doipo' on page 3 undefined on input line 74.
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
 
-
-Overfull \hbox (4.36052pt too wide) in paragraph at lines 72--75
-\OT1/cmr/m/n/10.95 V Kr^^Salovopolsk^^Sem tunelu pokl^^Sad^^Same ^^Sutern^^S^^P
- provoz za uni-verz^^Saln^^S^^P pro v^^Tsechny
  []
 
 
-Overfull \hbox (57.31111pt too wide) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+
+ []
+
+[3]
+Overfull \hbox (21.75961pt too wide) in paragraph at lines 88--93
+\OT1/cmr/m/n/12 M^^Te^^Tren^^S^^P bylo prov^^Sad^^Teno z mostu, kter^^Sy je bez
+prost^^Tredn^^Te u port^^Salu Kr^^Salovopolsk^^Seho
+ []
+
+<../measuring/tunelBarPlot.pdf, id=18, 505.89pt x 505.89pt>
+File: ../measuring/tunelBarPlot.pdf Graphic file (type pdf)
+
+<use ../measuring/tunelBarPlot.pdf>
+Package pdftex.def Info: ../measuring/tunelBarPlot.pdf used on input line 102.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
+
+Overfull \hbox (4.14313pt too wide) in paragraph at lines 117--121
+\OT1/cmr/m/n/12 ka^^Tzd^^Sem po^^Tzadavku za-z-na-men^^Sav^^Sa p^^Tresn^^Sy ^^T
+cas zm^^Sa^^Tcknut^^S^^P tla^^Tc^^S^^Ptka (v sekund^^Sach).
+ []
+
+
+Overfull \hbox (9.4264pt too wide) in paragraph at lines 117--121
+\OT1/cmr/m/n/12 Mezi ka^^Tzdodenn^^S^^P v^^Systupy vyvol^^Savac^^S^^Pho syst^^S
+emu pat^^Tr^^S^^P tab-ulka ob-sahuj^^S^^Pc^^S^^P 30min-
+ []
+
+[4] <../measuring/postaBarPlot.pdf, id=22, 505.89pt x 505.89pt>
+File: ../measuring/postaBarPlot.pdf Graphic file (type pdf)
+
+<use ../measuring/postaBarPlot.pdf>
+Package pdftex.def Info: ../measuring/postaBarPlot.pdf used on input line 131.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+
+Overfull \hbox (0.57947pt too wide) in paragraph at lines 136--136
+[][]\OT1/cmr/bx/n/14.4 Cetnosti p^^Tr^^S^^Pjezd^^Wu n^^Sakladn^^S^^Pch au-to-mo
+-bil^^Wu do skladu
+ []
+
+
+Overfull \hbox (22.42072pt too wide) in paragraph at lines 138--142
+\OT1/cmr/m/n/12 skladu firmy p^^Wusob^^S^^Pc^^S^^P ve Zl^^S^^Pnsk^^Sem kraji, k
+ter^^Sa ale bohu^^Tzel necht^^Tela b^^Syt jmenov^^Sana.
+ []
+
+[5 <../measuring/tunelBarPlot.pdf>] [6 <../measuring/postaBarPlot.pdf>]
+<../measuring/skladBarPlot.pdf, id=42, 505.89pt x 505.89pt>
+File: ../measuring/skladBarPlot.pdf Graphic file (type pdf)
+
+<use ../measuring/skladBarPlot.pdf>
+Package pdftex.def Info: ../measuring/skladBarPlot.pdf used on input line 155.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+ [7 <../measuring/skladBarPlot.pdf>]
+Overfull \hbox (7.99448pt too wide) in paragraph at lines 176--180
+\OT1/cmr/m/n/12 vy-brali ne-jvhodn^^Tej^^Ts^^S^^P z teo-ret-ick^^Sych aprox-i-m
+ac^^S^^P a tu jsme po-tom ex-per-i-ment^^Saln^^Te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--180
+
+ []
+
+
+Overfull \hbox (37.81111pt too wide) in paragraph at lines 186--186
 []\OT1/cmr/bx/n/12 Intervaly mezi vjezdy jed-notliv^^Sych au-to-mo-bil^^Wu do K
 r^^Salovopolsk^^Seho
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-
+Overfull \hbox (7.3417pt too wide) in paragraph at lines 187--192
+\OT1/cmr/m/n/12 rovnom^^Tern^^Seho ro-zlo^^Tzen^^S^^P v in-ter-valu <0,1> jsme 
+z^^S^^Pskali graf zo-brazen^^Sy na obr^^Sazku
  []
 
+<../measuring/generatorTunelBarPlot.pdf, id=52, 505.89pt x 505.89pt>
+File: ../measuring/generatorTunelBarPlot.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-
- []
-
-[3]
-Overfull \hbox (23.95013pt too wide) in paragraph at lines 96--101
-\OT1/cmr/m/n/10.95 M^^Te^^Tren^^S^^P bylo prov^^Sad^^Teno z mostu, kter^^Sy je 
-bezprost^^Tredn^^Te u port^^Salu Kr^^Salovopolsk^^Seho
- []
-
-<../measuring/tunelBarPlot.pdf, id=20, 505.89pt x 505.89pt>
-File: ../measuring/tunelBarPlot.pdf Graphic file (type pdf)
-
-<use ../measuring/tunelBarPlot.pdf>
-Package pdftex.def Info: ../measuring/tunelBarPlot.pdf used on input line 109.
+<use ../measuring/generatorTunelBarPlot.pdf>
+Package pdftex.def Info: ../measuring/generatorTunelBarPlot.pdf used on input l
+ine 195.
 (pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
- [4 <../measuring/tunelBarPlot.pdf>]
-Overfull \hbox (7.05278pt too wide) in paragraph at lines 119--119
-[][]\OT1/cmr/bx/n/12 Cetnosti p^^Tr^^S^^Pjezd^^Wu n^^Sakladn^^S^^Pch au-to-mo-b
-il^^Wu do skladu b^^Tehem
+ [8]
+<../measuring/generatorPostaBarPlot.pdf, id=57, 505.89pt x 505.89pt>
+File: ../measuring/generatorPostaBarPlot.pdf Graphic file (type pdf)
+
+<use ../measuring/generatorPostaBarPlot.pdf>
+Package pdftex.def Info: ../measuring/generatorPostaBarPlot.pdf used on input l
+ine 205.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+
+Overfull \hbox (18.30826pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/12 moc^^S^^P norm^^Saln^^S^^Pho ro-zlo^^Tzen^^S^^P a maxim^^Saln^^
+S^^P hod-noty po-moc^^S^^P ro-zlo^^Tzen^^S^^P rovnom^^Tern^^Seho.
  []
 
+<../measuring/generatorSkladBarPlot.pdf, id=58, 505.89pt x 505.89pt>
+File: ../measuring/generatorSkladBarPlot.pdf Graphic file (type pdf)
 
-Overfull \hbox (1.68504pt too wide) in paragraph at lines 125--127
-\OT1/cmr/m/n/10.95 https://www.causeweb.org/repository/statjava/Distributions.h
-tml - ap-plety
+<use ../measuring/generatorSkladBarPlot.pdf>
+Package pdftex.def Info: ../measuring/generatorSkladBarPlot.pdf used on input l
+ine 215.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+
+Overfull \hbox (21.99434pt too wide) in paragraph at lines 221--227
+\OT1/cmr/m/n/12 B^^Tehem ^^Tre^^Tsen^^S^^P t^^Seto pr^^Sace se n^^Sam povedlo n
+asimulo-vat n^^Sahodnost jev^^Wu prob^^S^^Phaj^^S^^Pc^^S^^Pch
  []
 
-No file doc.bbl.
-[5] (./doc.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[9 <../measuring/generatorTunelBarPlot.pdf>] [10 <../measuring/generatorPostaBa
+rPlot.pdf>] [11 <../measuring/generatorSkladBarPlot.pdf>] (./doc.aux) ) 
 Here is how much of TeX's memory you used:
- 2798 strings out of 495059
- 37166 string characters out of 3182030
- 94150 words of memory out of 3000000
- 5941 multiletter control sequences out of 15000+200000
- 9105 words of font info for 32 fonts, out of 3000000 for 9000
+ 2829 strings out of 495059
+ 38116 string characters out of 3182030
+ 96196 words of memory out of 3000000
+ 5967 multiletter control sequences out of 15000+200000
+ 9439 words of font info for 33 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,11n,43p,309b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on doc.pdf (6 pages, 93871 bytes).
+ 38i,11n,43p,459b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/
+xskriv01/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on doc.pdf (12 pages, 92395 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

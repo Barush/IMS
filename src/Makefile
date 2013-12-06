@@ -24,5 +24,13 @@ posta: posta.cpp
 
 rebuild: clean all
 
+run:
+	./tunel
+	./posta
+	./sklad
+	cat tunel.out
+	cat posta.out
+	cat sklad.out
+
 clean:
 	rm -f tunel  sklad *.out

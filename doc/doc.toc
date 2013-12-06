@@ -3,23 +3,25 @@
 \contentsline {subsection}{\numberline {1.1}Souhrn problematiky \IeC {\v r}e\IeC {\v s}en\IeC {\'e} v na\IeC {\v s}\IeC {\'\i } pr\IeC {\'a}ci}{2}
 \contentsline {subsection}{\numberline {1.2}Zp\IeC {\r u}soby z\IeC {\'\i }sk\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } pou\IeC {\v z}it\IeC {\'y}ch dat}{2}
 \contentsline {subsection}{\numberline {1.3}Metody ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } validity z\IeC {\'\i }skan\IeC {\'e}ho modelu}{3}
-\contentsline {section}{\numberline {2}Fakta}{3}
-\contentsline {section}{\numberline {3}Koncepce}{3}
-\contentsline {subsection}{\numberline {3.1}Intervaly mezi vjezdy jednotliv\IeC {\'y}ch automobil\IeC {\r u} do Kr\IeC {\'a}lovopolsk\IeC {\'e}ho tunelu}{3}
-\contentsline {subsubsection}{\numberline {3.1.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{3}
-\contentsline {subsubsection}{\numberline {3.1.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{4}
-\contentsline {subsubsection}{\numberline {3.1.3}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{4}
-\contentsline {subsection}{\numberline {3.2}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }chod\IeC {\r u} z\IeC {\'a}kazn\IeC {\'\i }k\IeC {\r u} na po\IeC {\v s}tu Brno 12 v pr\IeC {\r u}b\IeC {\v e}hu pracovn\IeC {\'\i }ho dne}{5}
-\contentsline {subsubsection}{\numberline {3.2.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{5}
-\contentsline {subsubsection}{\numberline {3.2.3}Zobrazen\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{5}
-\contentsline {subsection}{\numberline {3.3}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }jezd\IeC {\r u} n\IeC {\'a}kladn\IeC {\'\i }ch automobil\IeC {\r u} do skladu b\IeC {\v e}hem pracovn\IeC {\'\i }ho dne}{5}
-\contentsline {subsubsection}{\numberline {3.3.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{5}
-\contentsline {subsubsection}{\numberline {3.3.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{5}
-\contentsline {subsubsection}{\numberline {3.3.3}Zobrazen\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{5}
-\contentsline {section}{\numberline {4}Zp\IeC {\r u}sob \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{5}
-\contentsline {section}{\numberline {5}Testov\IeC {\'a}n\IeC {\'\i }}{5}
-\contentsline {subsection}{\numberline {5.1}Postup experimentov\IeC {\'a}n\IeC {\'\i } a okolnosti}{5}
-\contentsline {subsection}{\numberline {5.2}Dokumentace jednoltiv\IeC {\'y}ch experiment\IeC {\r u}}{5}
-\contentsline {subsection}{\numberline {5.3}Z\IeC {\'a}v\IeC {\v e}r experiment\IeC {\r u}}{5}
-\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{5}
+\contentsline {section}{\numberline {2}Koncepce}{3}
+\contentsline {subsection}{\numberline {2.1}Intervaly mezi vjezdy jednotliv\IeC {\'y}ch automobil\IeC {\r u} do Kr\IeC {\'a}lovopolsk\IeC {\'e}ho tunelu}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{4}
+\contentsline {subsubsection}{\numberline {2.1.3}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{4}
+\contentsline {subsection}{\numberline {2.2}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }chod\IeC {\r u} z\IeC {\'a}kazn\IeC {\'\i }k\IeC {\r u} na po\IeC {\v s}tu Brno 12 v pr\IeC {\r u}b\IeC {\v e}hu pracovn\IeC {\'\i }ho dne}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{5}
+\contentsline {subsection}{\numberline {2.3}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }jezd\IeC {\r u} n\IeC {\'a}kladn\IeC {\'\i }ch automobil\IeC {\r u} do skladu b\IeC {\v e}hem pracovn\IeC {\'\i }ho dne}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}M\IeC {\v e}\IeC {\v r}en\IeC {\'y} jev}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Zp\IeC {\r u}sob m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{6}
+\contentsline {subsubsection}{\numberline {2.3.3}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch dat}{7}
+\contentsline {section}{\numberline {3}Zp\IeC {\r u}sob \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{7}
+\contentsline {subsection}{\numberline {3.1}Aproximace funkc\IeC {\'\i } hustoty pravd\IeC {\v e}podobnosti}{7}
+\contentsline {section}{\numberline {4}Testov\IeC {\'a}n\IeC {\'\i }}{8}
+\contentsline {subsection}{\numberline {4.1}Postup experimentov\IeC {\'a}n\IeC {\'\i } a okolnosti}{8}
+\contentsline {subsection}{\numberline {4.2}Z\IeC {\'a}v\IeC {\v e}r experiment\IeC {\r u}}{8}
+\contentsline {subsubsection}{\numberline {4.2.1}Intervaly mezi vjezdy jednotliv\IeC {\'y}ch automobil\IeC {\r u} do Kr\IeC {\'a}lovopolsk\IeC {\'e}ho tunelu}{8}
+\contentsline {subsubsection}{\numberline {4.2.2}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }chod\IeC {\r u} z\IeC {\'a}kazn\IeC {\'\i }k\IeC {\r u} na po\IeC {\v s}tu Brno 12 v pr\IeC {\r u}b\IeC {\v e}hu pracovn\IeC {\'\i }ho dne}{9}
+\contentsline {subsubsection}{\numberline {4.2.3}\IeC {\v C}etnosti p\IeC {\v r}\IeC {\'\i }jezd\IeC {\r u} n\IeC {\'a}kladn\IeC {\'\i }ch automobil\IeC {\r u} do skladu b\IeC {\v e}hem pracovn\IeC {\'\i }ho dne}{9}
+\contentsline {section}{\numberline {5}Z\IeC {\'a}v\IeC {\v e}r}{10}

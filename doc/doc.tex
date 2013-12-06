@@ -1,5 +1,5 @@
 % Kile - graf. editor
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \input{il2code.tex}
 \usepackage{textcomp}
 \usepackage{graphicx}
@@ -54,24 +54,16 @@
 	poloautomatickou metodou s využitím základních funkcí knihovny time.h jazyka C. \\ \\
 
 	Data o příchodech klientů na poštu Brno 12 nám oficiální cestou poskytl oblastní manažer 
-	České Pošty, pan Tomáš Křepela, jemuž bychom chtěli na tomto místě poděkovat za ochotu a 
-	vstřícné jednání. \\ \\
+	České Pošty, pan Tomáš Křepela. \\ \\
 
 	Měření hodinových četností příjezdu nákladních aut do skladu ve firmě, která nechtěla být 
 	jmenována, bylo provedeno na vrátnici dané firmy, přes kterou musela projet všechna auta, která 
-	se do areálu skladu v den měření dostala. Nám byla poskytnuta vrátným dané firmy, kterému také 
-	děkujeme.
+	se do areálu skladu v den měření dostala.
 
 	\subsection{Metody ověření validity získaného modelu}
 	Výstupem našich simulačních modelů jsou histogramy, znázorňující zkoumané vlastnosti
 	jednotlivých jevů. Pro ověření validity našich simulačních modelů jsme porovnávali 
 	histogramy naměřených hodnot s histogramy hodnot generovaných našimi generátory.
-
-
-\section{Fakta}
-V Královopolském tunelu pokládáme úterní provoz za univerzální pro všechny pracovní dny mimo pátku, kdy 
-se hustota provozu v Královopolském tunelu zvyšuje, jak uvedla Mgr. Nina Ledvinová, tisková mluvčí ŘSD 
-(Ředitelství silnic a dálnic) pro \cite{doipo}.
 
 \section{Koncepce}
 V této kapitole podrobně popíšeme okolnosti měření jednotlivých jevů a všechna fakta, která by mohla
@@ -103,7 +95,8 @@ by průběh daného jevu mohl vypadat velmi odlišně.
 		Při měření se data automaticky ukládala do souboru ve formátu csv, který jsme dále zpracovávali
 		pomocí jazyka R v prostředí R Studio, kde jsme vypočítali četnost výskytů jednotlivých hodnot v
 		celém souboru 1517 hodnot a vektor těchto četností jsme následně zobrazili ve formě histogramu, jak 
-		lze vidět na obrázku \ref{tunel}.
+		lze vidět na obrázku \ref{tunel} a v tomto histogramu jsme hledali nastudovaná rozložení.
+
 		\begin{figure}[ht!]
 		\centering
 		\includegraphics[width=90mm]{../measuring/tunelBarPlot.pdf}
@@ -113,29 +106,123 @@ by průběh daného jevu mohl vypadat velmi odlišně.
 
 	\subsection{Četnosti příchodů zákazníků na poštu Brno 12 v průběhu pracovního dne}
 		\subsubsection{Měřený jev}
+		Druhý jev, který jsme v rámci projektu zpracovali, jsou četnosti příchodů zákazníků na poštu 
+		Brno 12 na Mojmírově náměstí v Králově Poli. Zákazník se do datového souboru zařadí v okamžiku,
+		kdy si vezme pořadový lísteček z vyvolávacího systému. \\ \\
+		Pracovní den jsme rozdělili do 21 intervalů pokrývajících celou otvírací dobu pošty (8.00 - 18.30),
+		kdy každý interval má délku 30 minut. Měření bylo provedeno v pondělí 11.11.2013, které je dle slov
+		pana Křepely vždy nejfrekventovanější den pracovního týdne.
+
 		\subsubsection{Způsob měření}
-		\subsubsection{Zobrazení naměřených dat}
+		Měření bylo provedeno zcela automaticky vyvolávacím systémem, který o každém požadavku zaznamenává
+		přesný čas zmáčknutí tlačítka (v sekundách). Mezi každodenní výstupy vyvolávacího systému patří 
+		tabulka obsahující 30minutové intervaly a počty zákazníků, kteří v daných intervalech přišli. Tuto
+		tabulku nám Česká Pošta byla ochotna poskytnout.
+
+
+		\subsubsection{Zpracování naměřených dat}
+		Tištěnou tabulku získanou od České Pošty jsme převedli do elektronické podoby a v prostředí
+		R Studio jsme ji převedli na histogram zobrazený v obrázku \ref{posta} a s ním jsme dále pracovali
+		při hledání rozložení klientů během dne. V histogramu jsou jednotlivé intervaly popsány počátečními časy
+		jednotlivých intervalů.
+
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/postaBarPlot.pdf}
+		\caption{Histogram měření}
+		\label{posta}
+		\end{figure}
 
 	\subsection{Četnosti příjezdů nákladních automobilů do skladu během pracovního dne}
 		\subsubsection{Měřený jev}
+		Posledním z našich jevů jsou četnosti příjezdů nákladních automobilů do skladu firmy působící 
+		ve Zlínském kraji, která ale bohužel nechtěla být jmenována. Tyto četnosti byly měřeny na vrátnici 
+		dané firmy ve středu 27.11.2013 během celého dne (od půlnoci do půlnoci). Tato vrátnice je jedinnou
+		cestou do areálu firmy, takže vypovídající hodnota našeho měření pro střed týdne by měla být 100\%. 
+
 		\subsubsection{Způsob měření}
-		\subsubsection{Zobrazení naměřených dat}
+		U nákladních automobilů se standardně zapisuje čas příjezdu a čas odjezdu. Statistika, kterou nám firma
+		poskytla seskupovala vždy počet přijíždějících nákladních aut během 60minutového intervalu. Výsledkem měření
+		tedy jsou počty přijíždějících automobilů v jednotlivých hodinách dne.
+
+		\subsubsection{Zpracování naměřených dat}
+		Naměřená data jsme získali v psané podobě, převedli jsme je tedy do podoby elektronické a stejně jako v ostatních
+		případech jsme si v R Studiu vykreslili histogram četností jednotlivých hodnot (Obrázek \ref{sklad}) a provedli jsme 
+		teoretické prokládání histogramu funkcí hustoty pravděpodobnosti daného rozložení.
+
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/skladBarPlot.pdf}
+		\caption{Histogram měření}
+		\label{sklad}
+		\end{figure}
 
 \section{Způsob řešení}
-https://www.causeweb.org/repository/statjava/Distributions.html - applety pro vyzkouseni jednotlivych rozlozeni
-Popis prevodu nekterych veci do kodu - grafy s aproximaci jednotlivych rozlozeni
+V této kapitole se budeme věnovat způsobu, jakým jsme dosáhli exaktních aproximací jedntolivých jevů 
+reálného světa pomocí matematických funkcí hustoty rozložení. Pro naše řešení jsme využívali pouze rozložení
+dostupná v knihovně SIMLIB v. 3.02 a jejich kombinace.
+
+	\subsection{Aproximace funkcí hustoty pravděpodobnosti} 
+	Každý histogram jsme tvarově porovnali s obecnými tvary funkcí hustoty pravděpodobnosti. Pokud byl tvar histogramu pro
+	různé části časové osy rozdílný, rozdělili jsme ji na několik částí a v těchto částech jsme potom prováděli aproximaci 
+	odděleně. V implementaci jsme tyto jednotlivé části složili dohromady takovým způsobem, že při každém generování požadavku 
+	se použilo právě jedno z odvozených rozložení. Rozhodování mezi použitými rozloženími bylo prováděno s pomocí vestavěné
+	funkce Random() v závislosti na tom, jaká část (v \%) naměřených hodnot patřila do danou funkcí aproximovaného intervalu.
+
+
 
 \section{Testování}
 	\subsection{Postup experimentování a okolnosti}
-	Jak jsme zjišťovali aproximace histogramů..
-	\subsection{Dokumentace jednoltivých experimentů}
+	Hlavní částí přesné aproximace změřeného jevu bylo testování. Po teoretickém proložení histogramu funkcí hustoty pravděpodobnosti jsme získali pro každý jev cca tři vyhovující varianty aproximace. Během testování jsme program opakovaně spouštěli a porovnávali jeho
+	výsledky vynesené do histogramu s histogramy reálně naměřených jevů. Tímto způsobem jsme vždy vybrali nejvhodnější z teoretických
+	aproximací a tu jsme potom experimentálně upravovali pro dosažení přesnějších výsledků. \\ \\
+	Parametry, které byly nejčastěji během testování v rozloženích měněny:
+	\begin{itemize}
+		\item \textbf{Charakteristiky polohy} - funkce jsme posouvali jak přičítáním konstanty k výsledku, tak pomocí parametrů jednotlivých 
+		funkcí (např. střední hodnota u exponenciálního rozložení nebo horní a dolní mez u rovnoměrného rozložení)
+		\item \textbf{Charakteristiky variability a špičatosti}
+	\end{itemize}
 	\subsection{Závěr experimentů}
-	Generator vjezdu do tunelu v case simulace 2 hodiny vygeneroval pocet aut odpovidajici realnemu poctu aut, projizdejicich behem mereni. (U pripadu, ktery je modelovan v prilozenem grafu jde o konkretne 1537 modelovych aut behem dvou hodin simulace oproti 1517 realnych aut behem dvou hodin mereni.)
-	Co ve výsledcích má čtenář vidět...
+		\subsubsection{Intervaly mezi vjezdy jednotlivých automobilů do Královopolského tunelu}
+		Po aproximaci histogramu naměřených hodnot pomocí kombinace rozložení Gama, jehož počátek byl posunut
+		do hodnoty 1 a doplnění 4.6\% aut, která vjela do tunelu speciálním způsobem - zároveň s jiným autem - 
+		pomocí rovnoměrného rozložení v intervalu <0,1> jsme získali graf zobrazený na obrázku \ref{genTunel}. Můžeme zde
+		pozorovat aproximací s minimální chybou. O přesnosti aproximace mluví také fakt, že pokud jsme simulaci nechali běžet
+		dvě hodiny modelového času, bylo vygenerováno v průměru 1537 aut oproti 1517 autům při dvouhodinovém měření.
+
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/generatorTunelBarPlot.pdf}
+		\caption{Histogram z jednoho běhu generátoru pro tunel}
+		\label{genTunel}
+		\end{figure}
+
+		\subsubsection{Četnosti příchodů zákazníků na poštu Brno 12 v průběhu pracovního dne}
+		Výsledné rozložení jsme složili ze čtyř různých rozložení, ve výsledku se nám tedy objevuje dvakrát rozložení Beta a dvakrát rozložení Gama. Histogram výsledků jednoho z běhů je zobrazen na obrázku \ref{genPosta}. Lze z něj vyčíst o něco menší, stále však pro model dostačující přesnost. Soustředit bychom se tady měli hlavně na tvar výsledného histogramu, který zhruba odpovídá skutečnosti.
+
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/generatorPostaBarPlot.pdf}
+		\caption{Histogram z jednoho běhu generátoru pro poštu}
+		\label{genPosta}
+		\end{figure}	
+
+		\subsubsection{Četnosti příjezdů nákladních automobilů do skladu během pracovního dne}	
+		Při hledání vhodné aproximace jsme opět zvolili metodu rozdělit rozložení na několik samostatných rozložení, kdy jsme okrajové hodnoty modelovali pomocí normálního rozložení a maximální hodnoty pomocí rozložení rovnoměrného. Histogram výsledků je zobrazen na obrázku \ref{genSklad}. Jeho tvar i hodnoty v jednotlivých hodinách odpovídají hledanému jevu znázorněném v obrázku \ref{sklad}.
+
+		\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=90mm]{../measuring/generatorSkladBarPlot.pdf}
+		\caption{Histogram z jednoho běhu generátoru pro sklad}
+		\label{genSklad}
+		\end{figure}		
 
 \section{Závěr}
-Jednoznačná odpověď na prvotní otázku studie.
-
-\bibliography{bibliography}
+Během řešení této práce se nám povedlo nasimulovat náhodnost jevů probíhajících v reálném světě pomocí generátorů 
+pseudonáhodných čísel. Dokázali jsme tím tedy, že matematický aparát generování pseudonáhodných čísel je dostatečně
+flexibilní na to, aby jeho prostřednictvím bylo možné aproximovat i jevy, které na první pohled nejsou učebnicovým příkladem 
+nám známých rozložení. Matematika definuje mnohem více různých rozložení než bylo uvažováno a využíváno v rámci řešeného 
+projektu, proto tedy na závěr této práce můžeme prohlásit, že jakákoliv struktura reálných hodnot se dá do simulačních
+modelů nahradit méně či více složitým generátorem pseudonáhodných čísel s aproximovaným rozložením.
 
 \end{document}

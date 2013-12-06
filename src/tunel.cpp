@@ -17,12 +17,7 @@ class Generator : public Event{
 		}
 		lastTime = Time;
 		double next;
-		/*
-		Varianta s pouzitim pouze jednoho rozlozeni
-		next = Logar(1.5, 1.0);
-		Activate(Time + next);*/
 
-		//Presnejsi varianta s kombinaci dvou ruznych rozlozeni
 		if(Random() < 0.046){		//4.6% aut projelo zaraz (interval 0-1)
 			next = Uniform(0, 1);
 			Activate(Time + next);
