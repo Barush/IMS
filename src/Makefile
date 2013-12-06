@@ -1,11 +1,9 @@
-######################################
+###############################################################################
 # Nazev: Makefile
 # Ucel kodu: IMS projekt
-#      makefile pro preklad programu generator
-# Autori: Barbora Skrivankova, xskriv01, FIT VUT
-#		  Jan Krocil, xkroci02, FIT VUT
-# Vytvoreno: prosinec 2013
-######################################
+# Autori: Barbora Skrivankova, xskriv01@stud.fit.vutbr.cz
+#		  Jan Krocil, xkroci02@stud.fit.vutbr.cz
+###############################################################################
 CLAGS=-g -O2 
 PFLAGS=-lsimlib -lm
  
