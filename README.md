@@ -1,3 +1,5 @@
+## HOTOVO
+
 # Projekt IMS 2013 - zadani no. 5: Modelovani stochastickeho procesu
 
 
